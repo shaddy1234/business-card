@@ -1,14 +1,16 @@
 import React from 'react'
 
 
-function Card() {
+function Card({name, role, phone, email,image }) {
 
 
   return (
     <div className='contact-card'>
-      <div><img src="./images/person.png" alt="" /></div>
-      <h3>Kim Shaddy</h3>
-      <p><b>Frontend</b> Developer</p>
+      <div><img src={image} alt="" /></div>
+      <h3>{name}</h3>
+      <p><b>{role}</b> </p>
+      <p>{phone}</p>
+      <p>{email}</p>
       <div className='buttons'>
         <a href='www.linkedin.com/in/shadrack-kimaau-8b84a4278
 

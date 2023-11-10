@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Card({name, role, phone, email,image }) {
+function Card({name, role, phone, email,image, socialA, socialB }) {
 
 
   return (
@@ -12,8 +12,8 @@ function Card({name, role, phone, email,image }) {
       <p>{phone}</p>
       <p>{email}</p>
       <div className='buttons'>
-        <a href="#" target="_blank"><button>LinkedIn</button></a>
-        <a href="#" target="_blank"><button>Twitter</button></a>
+        <a href={socialA} target="_blank"><button>Github</button></a>
+        <a href={socialB} target="_blank"><button>LinkedIn</button></a>
       </div>
     </div>
   )

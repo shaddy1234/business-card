@@ -1,17 +1,10 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import React, { useStatate } from 'react'
+import React from 'react'
 import './App.css'
 import Card from './components/Card'
 
 function App() {
-  // const [person, setPerson] = useStatate({
-  //   name:"",
-  //   role:"",
-  //   phone:"",
-  //   email:""
-  // })
-
   return (
     <div className='contacts'>
       <Card 
@@ -35,8 +28,6 @@ function App() {
             email="meshwield@gmail.com"
             image="./images/person 2 (2).png" 
       />
-      {/* <Card />
-      <Card /> */}
     </div>
   )
 }

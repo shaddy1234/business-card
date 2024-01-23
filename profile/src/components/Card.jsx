@@ -6,11 +6,6 @@ function Card(props) {
 
   return (
     <div className='contact-card'>
-      {/* <div><img src={image} alt="" className='image'/></div>
-      <h3>{props.name}</h3>
-      <p><b>{role}</b> </p>
-      <p>{phone}</p>
-      <p>{email}</p> */}
       <div className='image'><img src={props.image} alt="" /></div>
       <h3>{props.name}</h3>
       <p><b>{props.role}</b> </p>

@@ -4,7 +4,7 @@ export default [
         name:"Kim Shaddy",
         role:"Frontend Developer",
         phone:"+254795 849 775",
-        email:"musyokishadrach1@gmail.com",
+        email:"musyoki@gmail.com",
         image:"./images/person.png",
         socialA:"https://github.com/shaddy1234", 
         socialB:"https://linkedin.com/in/shadrack-kimaau-8b84a4278"

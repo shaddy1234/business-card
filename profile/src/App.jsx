@@ -4,20 +4,13 @@ import React from 'react'
 import './App.css'
 import Card from './components/Card'
 import data from './data'
-console.log (data)
 
 function App() {
   const cards = data.map(item => {
     return (
       <Card 
             key={item.id}
-            name={item.name}
-            role={item.role}
-            phone={item.phone}
-            email={item.email}
-            image={item.image}
-            socialA={item.socialA} 
-            socialB={item.socialB} 
+            {...item}
              
       />
     )

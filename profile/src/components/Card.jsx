@@ -1,21 +1,24 @@
 import React from 'react'
 
 
-function Card({name, role, phone, email,image }) {
+function Card(props) {
 
 
   return (
     <div className='contact-card'>
-      <div><img src={image} alt="" className='image'/></div>
-      <h3>{name}</h3>
+      {/* <div><img src={image} alt="" className='image'/></div>
+      <h3>{props.name}</h3>
       <p><b>{role}</b> </p>
       <p>{phone}</p>
-      <p>{email}</p>
+      <p>{email}</p> */}
+      <div className='image'><img src={props.image} alt="" /></div>
+      <h3>{props.name}</h3>
+      <p><b>{props.role}</b> </p>
+      <p>{props.phone}</p>
+      <p>{props.email}</p>
       <div className='buttons'>
-        <a href='www.linkedin.com/in/shadrack-kimaau-8b84a4278
-
-        ' target="_blank"><button>LinkedIn</button></a>
-        <button>Twitter</button>
+        <a href={props.socialA} target="_blank"><button>Github</button></a>
+        <a href={props.socialB} target="_blank"><button>LinkedIn</button></a>
       </div>
     </div>
   )

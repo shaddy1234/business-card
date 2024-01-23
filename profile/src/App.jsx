@@ -1,25 +1,37 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import React, { useStatate } from 'react'
+import React from 'react'
 import './App.css'
 import Card from './components/Card'
+import data from './data'
 
 function App() {
-  // const [person, setPerson] = useStatate({
-  //   name:"",
-  //   role:"",
-  //   phone:"",
-  //   email:""
-  // })
-
+  const cards = data.map(item => {
+    return (
+      <Card 
+            key={item.id}
+            {...item}
+             
+      />
+    )
+  })
   return (
     <div className='contacts'>
-      <Card 
+      {cards}
+      
+    </div>
+  )
+}
+
+export default App
+{/* <Card 
             name="Kim Shaddy"
             role="Frontend Developer"
             phone="+254795 849 775"
             email="musyokishadrach1@gmail.com"
             image="./images/person.png" 
+            socialA="https://github.com/shaddy1234" 
+            socialB="https://linkedin.com/in/shadrack-kimaau-8b84a4278" 
       />
       <Card 
             name="Rick Kayler"
@@ -27,6 +39,8 @@ function App() {
             phone="+254114 112 068"
             email="rickkayler@gmail.com"
             image="./images/person 2 (1).png" 
+            socialA="https://github.com/Rickyalo"
+            socialB="https://linkedin.com"
       />
       <Card 
             name="Mesh Wield"
@@ -34,11 +48,6 @@ function App() {
             phone="+254792 602 632"
             email="meshwield@gmail.com"
             image="./images/person 2 (2).png" 
-      />
-      {/* <Card />
-      <Card /> */}
-    </div>
-  )
-}
-
-export default App
+            socialA="https://github.com/shaddy1234" 
+            socialB="https://linkedin.com/in/shadrack-kimaau-8b84a4278"
+      /> */}

@@ -17,12 +17,12 @@ button{
 }
 
 .contact-card {
-  flex-basis: 225px;
+  flex-basis: 200px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  padding: 13px;
+  padding: 10px;
   padding-bottom: 10px;
   background-color: white;
   height: 600px;
@@ -34,6 +34,6 @@ button{
 .image {
   overflow-clip-margin: content-box;
   overflow: clip;
-  /* overflow-x: 1px;
-  overflow-y:1px ; */
+ overflow-x: 1px;
+  overflow-y:1px ;
 }

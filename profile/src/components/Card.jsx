@@ -6,7 +6,7 @@ function Card({name, role, phone, email,image }) {
 
   return (
     <div className='contact-card'>
-      <div><img src={image} alt="" /></div>
+      <div><img src={image} alt="" className='image'/></div>
       <h3>{name}</h3>
       <p><b>{role}</b> </p>
       <p>{phone}</p>

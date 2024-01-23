@@ -3,11 +3,35 @@
 import React from 'react'
 import './App.css'
 import Card from './components/Card'
+import data from './data'
+console.log (data)
 
 function App() {
+  const cards = data.map(item => {
+    return (
+      <Card 
+            key={item.id}
+            name={item.name}
+            role={item.role}
+            phone={item.phone}
+            email={item.email}
+            image={item.image}
+            socialA={item.socialA} 
+            socialB={item.socialB} 
+             
+      />
+    )
+  })
   return (
     <div className='contacts'>
-      <Card 
+      {cards}
+      
+    </div>
+  )
+}
+
+export default App
+{/* <Card 
             name="Kim Shaddy"
             role="Frontend Developer"
             phone="+254795 849 775"
@@ -33,9 +57,4 @@ function App() {
             image="./images/person 2 (2).png" 
             socialA="https://github.com/shaddy1234" 
             socialB="https://linkedin.com/in/shadrack-kimaau-8b84a4278"
-      />
-    </div>
-  )
-}
-
-export default App
+      /> */}
